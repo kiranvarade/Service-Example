@@ -1,0 +1,25 @@
+
+<!-- <p>{{result |json }}</p> -->
+
+<div class="container"> 
+  <table class="table table-responsive table-striped">
+  
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>City</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+       <tbody>
+         <tr *ngFor="let x of result.records">
+           <td>{{x.Name}}</td>
+           <td>{{x.City}}</td>
+           <td>{{x.Country}}</td>
+
+
+         </tr>
+       </tbody>
+    
+  </table>
+</div>
